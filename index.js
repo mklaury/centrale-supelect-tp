@@ -27,7 +27,7 @@ express()
     } catch (err) {
       console.error(err);
       res.send("Error " + err);
-    
+    }
   })
   .get('/cool', (req, res) => res.send(cool()))
   .get('/times', (req, res) => res.send(showTimes()))
