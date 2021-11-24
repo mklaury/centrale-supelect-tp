@@ -37,3 +37,12 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
+
+      - uses: AkhileshNS/heroku-deploy@v3.12.12
+        with:
+         # This will be used for authentication. You can find it in your heroku homepage account settings
+         heroku_api_key: '38657068-2ff8-4d22-8818-0ef049e4aca7'
+         # Email that you use with heroku
+         heroku_email: 'laurykarin@outlook.com'
+         # The appname to use for deploying/updating
+         heroku_app_name: 'centrale-supelec-tp'
